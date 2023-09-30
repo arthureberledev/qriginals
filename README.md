@@ -90,4 +90,4 @@ Make a pull request to add new features/make quality-of-life improvements/fix bu
 <br />
 
 ## License
-Licensed under the MIT license.
+Licensed under the [Apache-2.0 license](https://github.com/arthureberledev/qriginals/blob/main/LICENSE).
