@@ -1,0 +1,9 @@
+User-Agent: *
+
+Allow: /
+
+Disallow: /auth/
+Disallow: /account/
+Disallow: /collection/
+
+Sitemap: https://qriginals.com/sitemap.xml

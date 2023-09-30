@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  :root {
+    --balloon-border-radius: 4px;
+  }
+  .max-svh-screen {
+    max-height: 100vh; /* fallback for Opera, IE and etc. */
+    max-height: 100svh;
+  }
+}
