@@ -1,34 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://qriginals.com">
+  <img alt="Qriginals is a platform for creating and sharing QR code designs." src="https://qriginals.com/opengraph-image.png">
+  <h1 align="center">Qriginals</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  An open-source platform for creating and sharing QR code designs.
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://github.com/arthureberledev/qriginals/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/arthureberledev/qriginals?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  </a>
+  <a href="https://github.com/arthureberledev/qriginals"><img src="https://img.shields.io/github/stars/arthureberledev/qriginals?style=social" alt="Qriginals's GitHub repo"></a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
+  <a href="#setting-up-locally"><strong>Setting Up Locally</strong></a> ·
+  <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
+  <a href="#contributing"><strong>Contributing</strong></a> ·
+  <a href="#license"><strong>License</strong></a>
+</p>
+<br/>
+
+## Introduction
+
+[Qriginals](https://qriginals.com/) is a platform for creating and sharing QR code designs. See what others have used as prompt and parameters and use it to create your own unique art!
+
+![image](https://github.com/arthureberledev/qriginals/assets/58264696/88a07107-42c3-4572-a2be-4f24ef6660f7)
+
+<br />
+
+## Deploy Your Own
+You can deploy your own version of Qriginals to your preferred hosting platform.
+
+<br />
+
+## Setting Up Locally
+To set up Qriginals locally, you'll need to clone the repository and create an account for each of the used services and set following environment variables: 
+
+```
+OPENAI_API_KEY=
+REPLICATE_API_KEY=
+
+SUPABASE_SERVICE_ROLE_KEY=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET_KEY=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
+
+NEXT_PUBLIC_SITE_URL=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+Qriginals is built on the following stack:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js – frontend/backend
+- TailwindCSS – styles
+- Supabase - database, authentication and storage
+- Replicate - qr code generation
+- OpenAI - prompt generation
+- Vercel - hosting & analytics
+- Upstash - ratelimiting
+- Stripe - payments
+- Sharp - image processing and thumbnail generation
 
-## Learn More
+<br />
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
+Here's how you can contribute:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open an issue if you believe you've encountered a bug.
+Make a pull request to add new features/make quality-of-life improvements/fix bugs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br />
 
-## Deploy on Vercel
+<a href="https://github.com/arthureberledev/qriginals/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=arthureberledev/qriginals" />
+</a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+Licensed under the MIT license.
