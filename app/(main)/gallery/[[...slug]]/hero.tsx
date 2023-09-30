@@ -2,7 +2,9 @@ export function Hero() {
   return (
     <div className="mx-auto max-w-2xl text-center">
       <a
-        href="TODO"
+        href="https://github.com/arthureberledev/qriginals"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center rounded-full bg-brand-50 ring-brand-200 ring-1 px-2.5 py-1 text-xs gap-x-2 divide-x divide-brand-300 font-medium text-brand-700"
       >
         <span>We&apos;re now Open Source!</span>
