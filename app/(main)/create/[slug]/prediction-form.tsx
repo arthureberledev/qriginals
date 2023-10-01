@@ -19,7 +19,7 @@ import type { Prediction, PredictionParameters } from "~/lib/types/predictions";
 
 const SLIDER_SETTINGS = {
   guidanceScale: {
-    min: 0.1,
+    min: 7.5,
     max: 30,
     step: 0.01,
   },
@@ -56,7 +56,7 @@ export function PredictionForm(props: {
         prompt: "",
         useGptPrompt: false,
         negativePrompt: "ugly, disfigured, low quality, blurry, nsfw",
-        guidanceScale: 7.5,
+        guidanceScale: 20,
         strength: 0.9,
         controlnetConditioningScale: 1.2,
         seed: 22304,
@@ -344,8 +344,8 @@ export function PredictionForm(props: {
                   message: "Please choose a value for the influence level.",
                 },
                 min: {
-                  value: 0.1,
-                  message: "The minimum value for this slide is 0.1.",
+                  value: 7.5,
+                  message: "The minimum value for this slide is 9.",
                 },
                 max: {
                   value: 30,
